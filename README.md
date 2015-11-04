@@ -1,2 +1,10 @@
-# guessingGame
-My awesome guessing game
+# guessingGame by Jacob Knaack
+My awesome guessing game:
+
+- This game is very simple, just guess yes or no on the question prompts!
+- Dont't think too hard and hurt yourself.  I'm not a famous person so these
+	questions aren't common knowledge.
+- You're bound to lose! Don't fret, just refresh the web page in your broawser
+	to try again.
+- Have as mush fun as you can guessing these innocuous question about a 
+	random guy!
