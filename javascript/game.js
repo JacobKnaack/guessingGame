@@ -21,13 +21,23 @@ console.log("Response to question 1:" + answer1);
 
 				if (answer4 == "yes" || answer4 == "yes" || answer4 == "Y" || answer4 == "y" && answer4 != null) {
 					alert("Yur darn right I was!");
-					alert("You Won!! :D")
+					var answer5 = prompt("Now for the Finale: Am I the best javascript programmer?!");
+					console.log("Response to question 5: " + answer5);
+
+						if (answer5 == "no" || answer5 == "No" || answer5 == "N" || answer5 == "n" && answer5 != null) {
+							alert("Congrats " + user + "! You Won!! :D");
 			
 			//else statements for wrong guesses and if user no longer wants to play (clicking cancel)
+					} else if (answer5 == null) {
+						alert("Really " + user + "... You wait till the last question to quit.");
+					} else {
+						alert("Hah, I don't think I'm even close to the best!");
+					}
+
 			} else if (answer4 == null) {
-				alert("Aww, you made it so far!")
+				alert("Aww, you made it so far!");
 			} else {
-				alert("I'm not bold enough for a double bluff ;)")
+				alert("I'm not bold enough for a double bluff ;)");
 			}
 
 		} else if (answer3 == null) {
