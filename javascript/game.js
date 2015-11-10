@@ -1,4 +1,4 @@
-var user = prompt("Enter your name: ");
+var user = prompt("Please enter your name: ");
 console.log("Username: " + user);
 
 var questionsAsked = []; // Stores questions that have been asked
@@ -8,7 +8,7 @@ var answer = ''; // Makes answers global
 
 function biQuestion(question) { // function for asking questions
 	answer = prompt(question);
-	questionsAsked.push(question);
+	questionsAsked.push(questionNum + ". " + question + ' ' + answer);
 	document.getElementById("questions").innerHTML = questionsAsked.join('<br/>');
 	console.log("Response to question: " + answer);
 }
