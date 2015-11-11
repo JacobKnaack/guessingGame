@@ -29,14 +29,14 @@ function biQuestion(question) { // function for asking questions
 }
 
 function feedbackRight() { // adds an alert when you answer correctly
-	fVis.push("Question #" + questionNum + ": Correct!");
+	fVis.push("Question #" + questionNum + ": Correct!" + '<img src=\'http://www.serveandpour.com/images/confetti2.jpg\'>');
 	document.getElementById("feedback").innerHTML = fVis.join('<br/>');
 	questionNum ++;
 	questionsCorrect ++;
 }
 
 function feedbackWrong() { // adds an alert when you answer incorrectly
-	fVis.push("Question #" + questionNum + ": Incorrent :(");
+	fVis.push("Question #" + questionNum + ": Incorrect :(" + '<img src=\'imgs/badFeedback.png\'>');
 	document.getElementById("feedback").innerHTML = fVis.join('<br/>');
 	questionNum ++;
 }
