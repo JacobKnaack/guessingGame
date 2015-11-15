@@ -11,3 +11,11 @@
 #feedback {
 	text-align: left;
 }
+
+.correct {
+	color: green;
+}
+
+.incorrect {
+	color: red;
+}
