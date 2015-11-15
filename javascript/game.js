@@ -13,9 +13,9 @@ var questionFeed = [
 	{R:"2 for 2 " + user + "! Let's do another...", W:"Well darn that's not right. Try another...", N: "You forgot to answer"},
 	{R:"That's right " + user + ". I was not.", W: "That place sucks, no...", N:"Don't feel like guessing?"},
 	{R:"Yur darn right I was!", W: "Sorry " + user + " but I actually was born there.", N:"just press buttons!"},
-	{R:"Hurray! You won " + user + "!!", W:"Well no, but thanks!", N:"The very last question, really....."}
+	{R:"Unfortunatly... you're right " + user + "!!", W:"Well no, but thanks!", N:"The very last question, really....."}
 ]; // Stores all the feedback for all questions and answers
-var qVis = []; //Arrays used to display questions and answers
+var qVis = []; //Arrays used to display questions and feedback
 var fVis = []; 
 var questionNum = 1; // Keeps track of question number
 var questionsCorrect = 0; //keeps track of right answers
@@ -29,14 +29,14 @@ function biQuestion(question) { // function for asking questions
 }
 
 function feedbackRight() { // adds an alert when you answer correctly
-	fVis.push("Question #" + questionNum + ": Correct!" + '<img src=\'http://www.serveandpour.com/images/confetti2.jpg\'>');
+	fVis.push("Question #" + questionNum + "<span class=\'correct\'>: Correct!</span>" + '<img src=\'http://www.serveandpour.com/images/confetti2.jpg\'>');
 	document.getElementById("feedback").innerHTML = fVis.join('<br/>');
 	questionNum ++;
 	questionsCorrect ++;
 }
 
 function feedbackWrong() { // adds an alert when you answer incorrectly
-	fVis.push("Question #" + questionNum + ": Incorrect :(" + '<img src=\'imgs/badFeedback.png\'>');
+	fVis.push("Question #" + questionNum + "<span class=\'incorrect\'>: Incorrect :(</span>" + '<img src=\'imgs/badFeedback.png\'>');
 	document.getElementById("feedback").innerHTML = fVis.join('<br/>');
 	questionNum ++;
 }
