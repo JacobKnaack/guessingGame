@@ -58,7 +58,7 @@ function quiz() { //initializes the game
 		}
 	}
 		if (questionsCorrect >= 3) {
-			alert("You Win! You got more than 3 questions correct :D");
+			alert("You Win! You got more than 2 questions correct :D");
 		} else {
 			alert("Sorry " + user + ", you got less than 3 question correct. You Lose :(");
 		}
